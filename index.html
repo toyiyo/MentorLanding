@@ -1,50 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jose Delgado - Mentor Profile</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Additional custom styles can be added here */
-        .tag-lg {
-            @apply inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2;
-        }
-        .tag-sm {
-            @apply inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-2;
-        }
-        .white-btn {
-            @apply bg-white text-gray-700 font-semibold py-2 px-4 border border-gray-400 rounded shadow;
-        }
-        .teal-btn {
-            @apply bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-100">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow pb-12">
         <nav class="flex py-4" aria-label="Breadcrumb">
             <ol class="flex items-center space-x-4">
                 <li>
-                    <a href="#" class="text-gray-400 hover:text-gray-500">
-                        <svg class="flex-shrink-0 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                    <a href="https://devmanager.io" class="text-gray-400 hover:text-gray-500">
+                        <svg class="flex-shrink-0 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                            fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                            </path>
                         </svg>
                         <span class="sr-only">Home</span>
                     </a>
                 </li>
                 <li>
                     <div class="flex items-center">
-                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        <a href="#" class="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">Find a Mentor</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="flex items-center">
-                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                        <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd"
+                                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                                clip-rule="evenodd"></path>
                         </svg>
                         <span class="ml-4 text-sm font-medium text-gray-500" aria-current="page">Jose Delgado</span>
                     </div>
@@ -52,20 +38,25 @@
             </ol>
         </nav>
 
-        <div class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
+        <div
+            class="mt-8 max-w-3xl mx-auto grid grid-cols-1 gap-6 sm:px-6 lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-3">
             <div class="space-y-6 lg:col-start-1 lg:col-span-2">
                 <!-- Profile header -->
                 <section aria-labelledby="profile-overview-title">
                     <div class="bg-white shadow sm:rounded-lg">
                         <div class="px-4 py-5 sm:px-6">
-                            <h2 id="profile-overview-title" class="text-lg font-medium text-gray-900">Jose Delgado</h2>
-                            <p class="mt-1 max-w-2xl text-sm text-gray-500">Engineering Leader</p>
+                            <h2 id="profile-overview-title" class="text-lg font-medium text-gray-900">
+                                Jose Delgado
+                            </h2>
+                            <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                                Engineering Leader
+                            </p>
                         </div>
                         <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
                             <dl class="grid grid-cols-1 gap-x-4 gap-y-8 sm:grid-cols-2">
                                 <div class="sm:col-span-1">
                                     <dt class="text-sm font-medium text-gray-500">Location</dt>
-                                    <dd class="mt-1 text-sm text-gray-900">Miami, FL</dd>
+                                    <dd class="mt-1 text-sm text-gray-900">Remote</dd>
                                 </div>
                                 <div class="sm:col-span-1">
                                     <dt class="text-sm font-medium text-gray-500">Languages</dt>
@@ -74,7 +65,80 @@
                                 <div class="sm:col-span-2">
                                     <dt class="text-sm font-medium text-gray-500">About</dt>
                                     <dd class="mt-1 text-sm text-gray-900">
-                                        Engineering leader with over 15 years of experience building and scaling software engineering teams. I specialize in helping engineers and tech leads grow in their careers through practical advice and actionable feedback. My focus areas include technical leadership, engineering management, and career development in tech.
+                                        Engineering leader with over 15 years of experience
+                                        building and scaling software engineering teams. I
+                                        specialize in helping engineers and tech leads grow in
+                                        their careers through practical advice and actionable
+                                        feedback. My focus areas include technical leadership,
+                                        engineering management, and career development in tech.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        From Colombia to Leading in Tech: My Journey of Resilience
+                                        and Growth
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Growing up in Colombia during the 80s and 90s was shaped
+                                        by uncertainty and resilience. <br />
+                                        Violence was part of daily life, but so was hope and a
+                                        drive to build something better. <br />
+                                        That drive carried me forward when I moved to the U.S. in
+                                        2000, chasing safety and opportunity.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        The turning points in my journey
+                                    </dt>
+                                    <ul class="mt-1 text-sm text-gray-900">
+                                        <li>
+                                            Breaking into tech as an outsider, navigating new
+                                            systems and cultural barriers.
+                                        </li>
+                                        <li>
+                                            Transitioning from contributor to leader, where I
+                                            discovered my passion for empowering teams.
+                                        </li>
+                                        <li>
+                                            Facing my biggest challenge: rebuilding trust and
+                                            alignment within a struggling project team.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        Vulnerability as a strength
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        At one point, I burned out, pushing too hard to "prove"
+                                        myself. It wasn’t sustainable. <br />
+                                        Vulnerability taught me to redefine success—not by endless
+                                        productivity but by meaningful connections and outcomes.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        The Lessons
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        Leadership isn’t about having all the answers—it’s about
+                                        trust, collective ownership, and the courage to grow
+                                        through challenges. My journey from Colombia to
+                                        engineering leadership taught me that our past doesn’t
+                                        define us; it equips us.
+                                    </dd>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        Let's talk
+                                    </dt>
+                                    <dd class="mt-1 text-sm text-gray-900">
+                                        To those navigating their own challenges: resilience and
+                                        growth often come hand in hand. What’s a lesson your
+                                        journey has taught you?
+                                        <a href="#pricing-title">Let’s connect</a>—I’d love to learn
+                                        from your story.
                                     </dd>
                                 </div>
                             </dl>
@@ -86,7 +150,9 @@
                 <section aria-labelledby="skills-title">
                     <div class="bg-white shadow sm:rounded-lg">
                         <div class="px-4 py-5 sm:px-6">
-                            <h2 id="skills-title" class="text-lg font-medium text-gray-900">Skills</h2>
+                            <h2 id="skills-title" class="text-lg font-medium text-gray-900">
+                                Skills
+                            </h2>
                         </div>
                         <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
                             <div class="flex flex-wrap gap-2">
@@ -106,36 +172,19 @@
                 </section>
             </div>
 
-            <div class="lg:col-start-3 lg:col-span-1">
+            <div class="sm:col-start-3 sm:col-span-1">
                 <!-- Pricing section -->
                 <section aria-labelledby="pricing-title">
                     <div class="bg-white shadow sm:rounded-lg">
                         <div class="px-4 py-5 sm:px-6">
-                            <h2 id="pricing-title" class="text-lg font-medium text-gray-900">Mentorship Plans</h2>
+                            <h2 id="pricing-title" class="text-lg font-medium text-gray-900">
+                                Pricing
+                            </h2>
                         </div>
                         <div class="border-t border-gray-200 px-4 py-5 sm:px-6">
-                            <p class="text-3xl font-bold text-gray-900">$400 <span class="text-base font-normal">/ month</span></p>
-                            <ul class="mt-4 space-y-2">
-                                <li class="flex items-start">
-                                    <svg class="flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="ml-2 text-sm text-gray-500">4 calls per month (45min/call)</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="ml-2 text-sm text-gray-500">Direct message support</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg class="flex-shrink-0 h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-                                    <span class="ml-2 text-sm text-gray-500">Resume & LinkedIn review</span>
-                                </li>
-                            </ul>
-                            <button class="mt-6 w-full teal-btn">Apply now</button>
+                            <stripe-pricing-table pricing-table-id="prctbl_1QUThtEVJwPmHUt9sJi7ocvz"
+                                publishable-key="pk_live_51MulQCEVJwPmHUt9V29CsIg1jGaHasmaYba4OdEy60lWt7tLLstaSKfKTBMGVjmbcSIiHqJrstUQGmticNH5HTZZ00vcrF0lCy">
+                            </stripe-pricing-table>
                         </div>
                     </div>
                 </section>
@@ -143,28 +192,34 @@
         </div>
     </div>
 
-    <footer class="bg-white mt-12">
+    <footer class="footer">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
             <div class="flex justify-center space-x-6 md:order-2">
-                <a href="https://linkedin.com/in/josemdelgado" class="text-gray-400 hover:text-gray-500">
+                <a href="https://www.linkedin.com/in/josemdelgado/" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">LinkedIn</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                     </svg>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">Facebook</span>
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
-                    </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-gray-500">
-                    <span class="sr-only">Twitter</span>
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-gray-500">
+                <a href="https://github.com/jdelgado2002" class="text-gray-400 hover:text-gray-500">
                     <span class="sr-only">GitHub</span>
                     <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.607.069-.607 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.446-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.91-1.294 2.75-1.025 2.75-1.025.544 1.376.201 2.393.099 2.646.64.698 1.028 1.591 1.028 2.682 0 3.842-2.337 4.687-4.563 4.934.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.579.688.481C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-8 md:mt-0 md:order-1">
+                <p class="text-center text-base text-gray-400">
+                    &copy; <span id="current-year"></span> Jose Delgado. All rights
+                    reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+</body>
+
 </html>
