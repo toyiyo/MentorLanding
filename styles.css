@@ -14,3 +14,13 @@
     @apply bg-white mt-12;
     width: 100%;
 }
+
+/* Testimonials section styles */
+.testimonial {
+    @apply bg-gray-100 p-4 rounded-lg shadow-md;
+}
+
+/* Blog section styles */
+.blog-post {
+    @apply bg-gray-100 p-4 rounded-lg shadow-md;
+}
